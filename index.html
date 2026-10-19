@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAVORA · Landingpage-Demovideos (Vorschau)</title>
+  <style>
+    :root { --ivory: #F7F3EA; --navy: #08233A; --gold: #B9954E; --ink-2: #4a5663; --line: #e3dccb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--ivory); color: var(--navy);
+           font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.45; }
+    header, main, footer { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    header { padding-top: 40px; padding-bottom: 8px; }
+    h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.01em; }
+    header p { margin: 0; color: var(--ink-2); max-width: 70ch; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 540px), 1fr)); gap: 28px; padding: 28px 0 8px; }
+    figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+             box-shadow: 0 6px 22px rgba(8, 35, 58, 0.07); }
+    video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--ivory); }
+    figcaption { padding: 14px 18px 16px; }
+    figcaption h2 { font-size: 18px; margin: 0 0 4px; }
+    figcaption p { margin: 0 0 8px; color: var(--ink-2); font-size: 14.5px; }
+    .meta { font-size: 12.5px; color: #6b7480; }
+    .meta a { color: var(--navy); text-decoration-color: var(--gold); text-underline-offset: 2px; }
+    .meta span + span::before, .meta a + a::before, .meta span + a::before { content: " · "; color: #9aa2ab; }
+    h3 { font-size: 18px; margin: 36px 0 8px; }
+    details { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 12px 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    pre { margin: 12px 0 0; padding: 14px; background: var(--navy); color: var(--ivory); border-radius: 10px;
+          overflow: auto; font-size: 12.5px; line-height: 1.5; }
+    ul { margin: 8px 0 0; padding-left: 20px; color: var(--ink-2); font-size: 14.5px; }
+    footer { padding-top: 12px; padding-bottom: 48px; color: #6b7480; font-size: 13px; }
+    @media (prefers-reduced-motion: reduce) { video { outline: 2px dashed var(--gold); outline-offset: -2px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Landingpage-Demovideos</h1>
+    <p>Sieben kurze Loops (je unter 15 Sekunden), aufgenommen aus der echten CIP-Oberfläche.
+       Ausschließlich synthetische Demodaten (<code>case_demo_usp</code>) – keine echten Patientendaten.
+       Lokale Vorschau, lädt nichts von außen.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/01-patient-snapshot.jpg"
+               aria-label="Patient Snapshot: Kernfakten der Fallübersicht auf einen Blick, darunter was jetzt wichtig ist">
+          <source src="out/01-patient-snapshot.mp4" type="video/mp4">
+          <source src="out/01-patient-snapshot.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>1 · Patient Snapshot</h2>
+          <p>In Sekunden erfasst: Patientin, Fachgebiete, Medikation, Psychosoziales, Allergien, Familie – und was jetzt wichtig ist.</p>
+          <div class="meta"><span>13,4 s</span><a href="out/01-patient-snapshot-1080p.mp4">1080p</a><a href="out/01-patient-snapshot.webm">WebM</a><a href="out/01-patient-snapshot.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/02-source-linked.jpg"
+               aria-label="Source-linked: Klick von der Medikation zur Evidenzkette mit Dokument, Seite und Originalfragment">
+          <source src="out/02-source-linked.mp4" type="video/mp4">
+          <source src="out/02-source-linked.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>2 · Source-linked</h2>
+          <p>Von der Aussage zur Quelle: Dokument, Seite, Originalfragment – beim Export hash-verifiziert.</p>
+          <div class="meta"><span>13,6 s</span><a href="out/02-source-linked-1080p.mp4">1080p</a><a href="out/02-source-linked.webm">WebM</a><a href="out/02-source-linked.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/03-longitudinal.jpg"
+               aria-label="Longitudinal: dokumentierte Ereignisse in zeitlicher Folge und Veränderungen ohne Überschreiben">
+          <source src="out/03-longitudinal.mp4" type="video/mp4">
+          <source src="out/03-longitudinal.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>3 · Longitudinal</h2>
+          <p>Verlauf statt Momentaufnahme: dokumentierte Ereignisse in zeitlicher Folge, Veränderungen ohne etwas zu überschreiben.</p>
+          <div class="meta"><span>14,0 s</span><a href="out/03-longitudinal-1080p.mp4">1080p</a><a href="out/03-longitudinal.webm">WebM</a><a href="out/03-longitudinal.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/04-cross-specialty.jpg"
+               aria-label="Cross-specialty: sieben dokumentierte Fachgebiete und diagnostischer Status mit Quelle und Seite">
+          <source src="out/04-cross-specialty.mp4" type="video/mp4">
+          <source src="out/04-cross-specialty.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>4 · Cross-specialty</h2>
+          <p>Ein Fall, viele Fachgebiete: sieben dokumentierte Fachgebiete, diagnostischer Status je Aussage mit Quelle und Seite.</p>
+          <div class="meta"><span>13,2 s</span><a href="out/04-cross-specialty-1080p.mp4">1080p</a><a href="out/04-cross-specialty.webm">WebM</a><a href="out/04-cross-specialty.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/05-conflict-both-sources.jpg"
+               aria-label="Konflikt: zwei Laborwerte zur selben Messung, 12,6 g/dL auf Seite 1 und 8,1 g/dL auf Seite 2, beide Quellen bleiben sichtbar">
+          <source src="out/05-conflict-both-sources.mp4" type="video/mp4">
+          <source src="out/05-conflict-both-sources.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>5 · Konflikt – beide Quellen bleiben sichtbar</h2>
+          <p>Zwei Laborwerte zur selben Messung (12.6 g/dL, Seite 1 · 8.1 g/dL, Seite 2): NAVORA wählt nicht aus.</p>
+          <div class="meta"><span>14,4 s</span><a href="out/05-conflict-both-sources-1080p.mp4">1080p</a><a href="out/05-conflict-both-sources.webm">WebM</a><a href="out/05-conflict-both-sources.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/06-family-genetics.jpg"
+               aria-label="Familie und Genetik: dokumentierte Familienanamnese und genetische Befunde getrennt, ohne Risikoableitung">
+          <source src="out/06-family-genetics.mp4" type="video/mp4">
+          <source src="out/06-family-genetics.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>6 · Familie &amp; Genetik</h2>
+          <p>Dokumentiertes bleibt getrennt von dem, was nicht gefolgert werden darf – ohne Risikoableitung, jede Aussage belegt.</p>
+          <div class="meta"><span>14,0 s</span><a href="out/06-family-genetics-1080p.mp4">1080p</a><a href="out/06-family-genetics.webm">WebM</a><a href="out/06-family-genetics.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video autoplay muted loop playsinline preload="metadata" poster="out/07-human-review.jpg"
+               aria-label="Human-reviewed: Review-Entscheidungen bestätigt, markiert und verworfen bleiben sichtbar">
+          <source src="out/07-human-review.mp4" type="video/mp4">
+          <source src="out/07-human-review.webm" type="video/webm">
+        </video>
+        <figcaption>
+          <h2>7 · Human-reviewed</h2>
+          <p>Bestätigt, markiert, verworfen: menschliche Entscheidungen bleiben sichtbar, verworfene Aussagen behalten ihre Quelle.</p>
+          <div class="meta"><span>13,4 s</span><a href="out/07-human-review-1080p.mp4">1080p</a><a href="out/07-human-review.webm">WebM</a><a href="out/07-human-review.jpg">Poster</a></div>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <h3>Einbetten</h3>
+    <details open>
+      <summary>HTML-Snippet (je Clip; Pfade anpassen)</summary>
+<pre>&lt;video autoplay muted loop playsinline preload="metadata"
+       poster="/videos/02-source-linked.jpg"
+       aria-label="Source-linked: Klick von der Medikation zur Evidenzkette"&gt;
+  &lt;source src="/videos/02-source-linked.mp4" type="video/mp4"&gt;
+  &lt;source src="/videos/02-source-linked.webm" type="video/webm"&gt;
+&lt;/video&gt;</pre>
+      <ul>
+        <li><code>muted</code> + <code>playsinline</code> sind Pflicht, sonst blockieren Browser (v. a. iOS) das Autoplay.</li>
+        <li>MP4 (H.264, 720p) spielt überall und ist nicht größer als WebM – WebM ist optional und kann entfallen.</li>
+        <li>Die <code>*-1080p.mp4</code>-Dateien sind Master-Fassungen (Hero-Bereiche, Präsentationen), nicht für den Autoplay-Einsatz gedacht.</li>
+        <li>Die Videos enthalten bereits Untertitel im Bild (Deutsch) und den Hinweis „synthetische Demodaten“. <code>aria-label</code> liefert die Textalternative.</li>
+      </ul>
+    </details>
+  </main>
+
+  <footer>
+    Hinweis: Alle Aufnahmen zeigen ausschließlich die synthetische Demo. Nichts darin ist ein klinischer Befund, eine Diagnose oder eine Prognose.
+  </footer>
+
+  <script>
+    // Vorschau-Verhalten, so wie es sich auch auf der Landingpage empfiehlt:
+    // nur sichtbare Videos spielen (spart CPU), bei „Bewegung reduzieren“ kein Autoplay.
+    (function () {
+      var vids = Array.prototype.slice.call(document.querySelectorAll('video'));
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) {
+        vids.forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+        return;
+      }
+      if (!('IntersectionObserver' in window)) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { var p = e.target.play(); if (p && p.catch) p.catch(function () {}); }
+          else e.target.pause();
+        });
+      }, { threshold: 0.35 });
+      vids.forEach(function (v) { io.observe(v); });
+    })();
+  </script>
+</body>
+</html>
